@@ -1,24 +1,23 @@
-import { Banners, FeaturedProducts, LatestProducts, Offer } from "./main.js";
+import {  FeaturedProducts, LatestProducts, Offer } from "./main.js";
 
-const hero = document.querySelector(".hero");
 const featuredProducts = document.querySelector(".featuredProducts");
 const buttons = document.querySelectorAll(".tab-btn");
 const contents = document.querySelectorAll(".tab-content");
 const product = document.querySelector(".productBlock");
 const offerBlock = document.querySelector(".offerBlock");
 
-hero.innerHTML = Banners.map(
-  (item) => `
-<div class="w-[644px]">
-<p class="font-[700] text-[17px] leading-[175%] mb-[12px] text-[#FB2E86]">${item.miniText}</p>
-<h1 class="font-[700] text-[53px]  mb-[12px] ">${item.title}</h1>
-<p class="font-[700] text-[17px] leading-[175%] text-[#8A8FB9] mb-[27px] ">${item.headerText}</p>
-<button class="py-[16px] px-[40px] bg-[#FB2E86] text-white font-[600] text-[16px]">${item.headerBtn}</button>
-</div>
-<div>
-<img src="${item.HeaderImg}">
-</div>`
-);
+// hero.innerHTML = Banners.map(
+//   (item) => `
+// <div class="w-[644px]">
+// <p class="font-[700] text-[17px] leading-[175%] mb-[12px] text-[#FB2E86]">${item.miniText}</p>
+// <h1 class="font-[700] text-[53px]  mb-[12px] ">${item.title}</h1>
+// <p class="font-[700] text-[17px] leading-[175%] text-[#8A8FB9] mb-[27px] ">${item.headerText}</p>
+// <button class="py-[16px] px-[40px] bg-[#FB2E86] text-white font-[600] text-[16px]">${item.headerBtn}</button>
+// </div>
+// <div>
+// <img src="${item.HeaderImg}">
+// </div>`
+// );
 
 featuredProducts.innerHTML = FeaturedProducts.map(
   (item) => `

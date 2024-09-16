@@ -1,3 +1,77 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-track {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: aquamarine;
+}
+
+.slick-next {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("./img/angle-right-solid.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
+
+.slick-prev {
+  position: absolute;
+  z-index: 10000;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("./img/angle-left-solid.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
+
+.slider {
+  position: relative;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 15px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #5656f4;
+  display: block;
+  rotate: 45deg;
+}
+
+.slick-dots .slick-active button {
+  background-color: red;
+}
+
+.ot {
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
